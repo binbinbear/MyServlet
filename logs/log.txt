@@ -1,0 +1,72 @@
+The client will now receive all logging from the daemon (pid: 53280). The daemon log file: /Users/cbernie/.gradle/daemon/3.3/daemon-53280.out.log
+Starting 6th build in daemon [uptime: 1 mins 12.206 secs, performance: 97%, GC rate: 0.17/s, tenured heap usage: 1% of 716.2 MB]
+Closing daemon's stdin at end of input.
+Executing build with daemon context: DefaultDaemonContext[uid=42251784-a8c5-4c02-8649-f5ec71202778,javaHome=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home,daemonRegistryDir=/Users/cbernie/.gradle/daemon,pid=53280,idleTimeout=60000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+The daemon will no longer process any standard input.
+Creating new cache for plugin-use-metadata, path /Users/cbernie/.gradle/caches/3.3/plugin-resolution/plugin-use-metadata.bin, access org.gradle.cache.internal.DefaultCacheAccess@6f00631d
+Creating new cache for client-status, path /Users/cbernie/.gradle/caches/3.3/plugin-resolution/client-status.bin, access org.gradle.cache.internal.DefaultCacheAccess@6f00631d
+Starting Build
+Settings evaluated using settings file '/Users/cbernie/code/MyServlet/settings.gradle'.
+Projects loaded. Root project using build file '/Users/cbernie/code/MyServlet/build.gradle'.
+Included projects: [root project 'MyServlet']
+Evaluating root project 'MyServlet' using build file '/Users/cbernie/code/MyServlet/build.gradle'.
+Using 8 worker leases.
+The Jetty plugin has been deprecated and is scheduled to be removed in Gradle 4.0. Consider using the Gretty (https://github.com/akhikhl/gretty) plugin instead.
+	at build_ac72b8hhi5u3ukgpxeawdj2zn.run(/Users/cbernie/code/MyServlet/build.gradle:5)
+All projects evaluated.
+Selected primary task 'jettyRun' from project :
+Tasks to be executed: [task ':compileJava', task ':processResources', task ':classes', task ':jettyRun']
+Creating new cache for fileHashes, path /Users/cbernie/code/MyServlet/.gradle/3.3/taskArtifacts/fileHashes.bin, access org.gradle.cache.internal.DefaultCacheAccess@6c794133
+In-memory cache of /Users/cbernie/code/MyServlet/.gradle/3.3/taskArtifacts/fileHashes.bin: Size{5}, CacheStats{hitCount=5, missCount=5, loadSuccessCount=5, loadExceptionCount=0, totalLoadTime=2086198, evictionCount=0}
+Creating new cache for fileSnapshots, path /Users/cbernie/code/MyServlet/.gradle/3.3/taskArtifacts/fileSnapshots.bin, access org.gradle.cache.internal.DefaultCacheAccess@6c794133
+In-memory cache of /Users/cbernie/code/MyServlet/.gradle/3.3/taskArtifacts/fileSnapshots.bin: Size{4}, CacheStats{hitCount=4, missCount=4, loadSuccessCount=4, loadExceptionCount=0, totalLoadTime=1663115, evictionCount=0}
+Creating new cache for taskArtifacts, path /Users/cbernie/code/MyServlet/.gradle/3.3/taskArtifacts/taskArtifacts.bin, access org.gradle.cache.internal.DefaultCacheAccess@6c794133
+In-memory cache of /Users/cbernie/code/MyServlet/.gradle/3.3/taskArtifacts/taskArtifacts.bin: Size{2}, CacheStats{hitCount=2, missCount=2, loadSuccessCount=2, loadExceptionCount=0, totalLoadTime=33111862, evictionCount=0}
+:compileJava (Thread[Daemon worker,5,main]) started.
+:compileJava
+Putting task artifact state for task ':compileJava' into context took 0.0 secs.
+Task :compileJava class loader hash: 01d9458a7e5b59caccdb01424c57a842
+Task :compileJava actions class loader hash: 18198991b357e4282b88db10fdb1e992
+Creating new cache for metadata-2.23/module-metadata, path /Users/cbernie/.gradle/caches/modules-2/metadata-2.23/module-metadata.bin, access org.gradle.cache.internal.DefaultCacheAccess@4f433b59
+Creating new cache for metadata-2.23/artifact-at-repository, path /Users/cbernie/.gradle/caches/modules-2/metadata-2.23/artifact-at-repository.bin, access org.gradle.cache.internal.DefaultCacheAccess@4f433b59
+Skipping task ':compileJava' as it is up-to-date (took 0.009 secs).
+:compileJava UP-TO-DATE
+:compileJava (Thread[Daemon worker,5,main]) completed. Took 0.01 secs.
+:processResources (Thread[Daemon worker,5,main]) started.
+:processResources
+Putting task artifact state for task ':processResources' into context took 0.0 secs.
+Skipping task ':processResources' as it has no source files and no previous output files.
+:processResources UP-TO-DATE
+:processResources (Thread[Daemon worker,5,main]) completed. Took 0.001 secs.
+:classes (Thread[Daemon worker,5,main]) started.
+:classes
+Skipping task ':classes' as it has no actions.
+:classes UP-TO-DATE
+:classes (Thread[Daemon worker,5,main]) completed. Took 0.001 secs.
+:jettyRun (Thread[Daemon worker,5,main]) started.
+:jettyRun
+Putting task artifact state for task ':jettyRun' into context took 0.0 secs.
+Executing task ':jettyRun' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Configuring Jetty for root project 'MyServlet'
+Webapp source directory = /Users/cbernie/code/MyServlet/src/main/webapp
+Reload Mechanic: automatic
+web.xml file = /Users/cbernie/code/MyServlet/src/main/webapp/WEB-INF/web.xml
+Context path = /a
+Tmp directory =  determined at runtime
+Web defaults = org/mortbay/jetty/webapp/webdefault.xml
+Web overrides =  none
+Webapp directory = /Users/cbernie/code/MyServlet/src/main/webapp
+Starting jetty 6.1.26 ...
+jetty-6.1.26
+No Transaction manager found - if your webapp requires one, please configure one.
+The name of Website: Bernie
+Started SelectChannelConnector@0.0.0.0:8080
+Before servlet -> encode: null contenttype: null
+After servlet -> encode: ISO-8859-1 contenttype: null
+Before servlet -> encode: null contenttype: null
+After servlet -> encode: iso-8859-1 contenttype: text/html; charset=iso-8859-1
+Before servlet -> encode: null contenttype: null
+After servlet -> encode: UTF-8 contenttype: Text/html;charset=UTF-8
+Before servlet -> encode: null contenttype: null
+After servlet -> encode: UTF-8 contenttype: Text/html;charset=UTF-8

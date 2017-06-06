@@ -32,6 +32,7 @@ public class MyController extends HttpServlet {
                 + request.getParameter("url") + "\n" +
                 "</ul>\n" +
                 "</body></html>");
+
     }
 
     // 处理 POST 方法请求的方法
