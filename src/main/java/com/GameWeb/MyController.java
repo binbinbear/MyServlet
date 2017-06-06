@@ -1,5 +1,6 @@
 package com.GameWeb;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,6 +21,8 @@ public class MyController extends HttpServlet {
         String title = "Use Get Method to read form data";
         String name = new String(request.getParameter("name").getBytes("ISO8859-1"), "UTF-8");
         String docType = "<!DOCTYPE html> \n";
+        ServletContext context = getServletContext();
+        context.log("Add oil Rowling");
         out.println(docType +
             "<html> \n" +
             "<head><title>" + title + "</title></head>\n" +

@@ -30,4 +30,20 @@
         <servlet-name>mycon</servlet-name>
         <url-pattern>/mycon</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>ErrorHandler</servlet-name>
+        <servlet-class>com.GameWeb.ErrorHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ErrorHandler</servlet-name>
+        <url-pattern>/error</url-pattern>
+    </servlet-mapping>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/error</location>
+    </error-page>
 </web-app>
